@@ -90,15 +90,21 @@ class Grid
 
       neighbours = []
 
+      # North-West Neighbors
       neighbours.push(cell_at(row - 1, column - 1, create_new_cell))
+      # North Neighbors
       neighbours.push(cell_at(row - 1, column, create_new_cell))
+      # North-East Neighbors
       neighbours.push(cell_at(row - 1, column + 1, create_new_cell))
-
+      # West Neighbors
       neighbours.push(cell_at(row, column - 1, create_new_cell))
+      # East Neighbors
       neighbours.push(cell_at(row, column + 1, create_new_cell))
-
+      # South-West Neighbors
       neighbours.push(cell_at(row + 1, column - 1, create_new_cell))
+      # South Neighbors
       neighbours.push(cell_at(row + 1, column, create_new_cell))
+      # South-East Neighbors
       neighbours.push(cell_at(row + 1, column + 1, create_new_cell))
 
       neighbours.select{|n| n && n.is_alive?}
