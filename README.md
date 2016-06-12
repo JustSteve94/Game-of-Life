@@ -5,5 +5,6 @@ Conway's Game of Life Automaton
 
 2. Application takes -n (number of iterations) argument which represents a number of generations.
 
+3. Application creates an output file which represents a file with final state.
 
 For each generation created array will be checked if it needs to be maximized or minimized.
