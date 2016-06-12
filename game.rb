@@ -18,7 +18,6 @@ class Game
       puts @grid.display_output
       @grid.write_output
       sleep @delay
-      puts ""
       @grid.next!
       @generation += 1
     end
